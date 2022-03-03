@@ -79,7 +79,7 @@ int main(){
        	 	}
 		
     		/*while (true){
-    			Image movingImg( Point( k, z ), "LoL-flash.jpeg" );
+    			Image movingImg( Point( k, z ), "mozgokep.jpeg" );
    			movingImg.set_mask(Point{k,z},100,100);
     			win.attach(movingImg);
     			if (k = 800){
