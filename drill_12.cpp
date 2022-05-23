@@ -5,7 +5,7 @@
 #include <iostream>
 
 /*
-g++ -w -Wall -std=c++11 GUI/Graph.cpp GUI/Window.cpp GUI/GUI.cpp GUI/Simple_window.cpp drill12.cpp `fltk-config --ldflags --use-images` -o a2.out
+g++ -w -Wall -std=c++11 GUI/Graph.cpp GUI/Window.cpp GUI/GUI.cpp GUI/Simple_window.cpp drill_12.cpp `fltk-config --ldflags --use-images` -o a2.out
 */
 
 int main(){
