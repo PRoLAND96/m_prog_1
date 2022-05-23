@@ -67,31 +67,21 @@ int main(){
 		int k = 0; 
 		int z = 0;
 		
-		Image movingImg( Point( k, z ), "mozgokep.jpeg" );
-   		movingImg.set_mask(Point{100,100},k,z);
-   		
-   		for(int k = 0; k < 8; k++)
-        		for (int z = 0; z < 8; z++)
-        		{
-           	 	movingImg.move(k * 100, z * 100);
-           		win.attach(movingImg);
-           		win.wait_for_button();
-       	 	}
-		
-    		/*while (true){
-    			Image movingImg( Point( k, z ), "mozgokep.jpeg" );
-   			movingImg.set_mask(Point{k,z},100,100);
-    			win.attach(movingImg);
-    			if (k = 800){
-    				z += 100;
-    				k = 0;
+    
+		while (true){
+    			if(k/800 == 1){
+    				k-=800;
+    				z+=100;
     			}
-    			if (z = 800){
-    				z = 0;
+    			if(z/800 == 1){
+    				z=0;
     			}
-    			k +=100;
-    			win.wait_for_button();
-    		}*/
+    		Image movingImg(Point(k,z),"mozgokep.jpeg");
+    		win.attach(movingImg);
+    		k+=100;
+    		
+    		win.wait_for_button();	
+    		}
     		
     		
 		    		
